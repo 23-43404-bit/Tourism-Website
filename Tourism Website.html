@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mabini Tourism</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .aurora-text {
+      background: linear-gradient(135deg, #1d4ed8, #0d9488, #683f21);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: aurora 4s ease-in-out infinite;
+    }
+    @keyframes aurorsition: 100% 50%; }
+    }
+  </style>a {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-po
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold text-blue-700">🌊 Mabini</div>
+      <nav id="menu" class="hidden md:flex space-x-6 font-semibold">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#attractions" class="hover:text-blue-600">Attractions</a>
+        <a href="#map" class="hover:text-blue-600">Map</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative h-screen flex items-center justify-center text-center">
+    <img src="c:\Users\HP\Downloads\tourism website\Background.jpeg" alt="Discover the Beauty of Mabini, Batangas" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 text-white px-4">
+      <h1 class="text-5xl md:text-6xl font-bold aurora-text">Discover the Beauty of Mabini, Batangas
+</h1>
+      <p class="mt-4 text-lg md:text-xl">Experience diving spots, breathtaking mountain trails, and authentic local cuisine in the heart of Batangas.
+
+</p>
+      <a href="#attractions" class="mt-6 inline-block bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-full font-semibold shadow-lg transition">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Attractions Carousel -->
+  <section id="attractions" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Top Experiences in Mabini</h2>
+    <div id="carousel" class="flex overflow-x-auto space-x-6 pb-4 snap-x snap-mandatory">
+      <div class="flex-none w-80 bg-white rounded-lg shadow hover:shadow-xl snap-start transition">
+        <img src="c:\Users\HP\Downloads\tourism website\Anilao Diving Spot.jpg" alt="Diving">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Anilao Diving Spot</h3>
+          <p class="text-gray-600">Explore vibrant coral reefs and rich marine life.</p>
+        </div>
+      </div>
+      <div class="flex-none w-80 bg-white rounded-lg shadow hover:shadow-xl snap-start transition">
+        <img src="c:\Users\HP\Downloads\tourism website\Mt. Gulugod Baboy.jpg" class="h-48 w-full object-cover rounded-t-lg" alt="Hiking">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Mt. Gulugod Baboy</h3>
+          <p class="text-gray-600">Hike trails with breathtaking views of Mt.Gulugod Baboy.</p>
+        </div>
+      </div>
+      <div class="flex-none w-80 bg-white rounded-lg shadow hover:shadow-xl snap-start transition">
+        <img src="c:\Users\HP\Downloads\tourism website\Masasa Beach.jpg" alt="Beach">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Masasa Beach</h3>
+          <p class="text-gray-600">Discover Batangas hidden gem Masasa Beach, your perfect island getaway.</p>
+        </div>
+      </div>
+      <div class="flex-none w-80 bg-white rounded-lg shadow hover:shadow-xl snap-start transition">
+        <img src="c:\Users\HP\Downloads\tourism website\Mabini Lomi.webp" alt="Lomi">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Mabini Lomi</h3>
+          <p class="text-gray-600">Taste the famous hot, savory noodle delicacy.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel controls -->
+    <div class="flex justify-center mt-6 space-x-4">
+      <button id="prevBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">◀ Prev</button>
+      <button id="nextBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">Next ▶</button>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-r from-blue-600 to-teal-500 py-16 text-center text-white">
+    <h2 class="text-3xl font-bold mb-4">Plan Your Visit Today!</h2>
+    <p class="mb-6">Escape the city and experience the best of Mabini’s nature, culture, and adventure.</p>
+    <a href="#contact" class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition">Start Now</a>
+  </section>
+
+  <!-- Map -->
+  <section id="map" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Where is Mabini?</h2>
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49212.97357974067!2d120.89444514573227!3d13.737667728169454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3393ff7ef2457c4b%3A0x3d3b35f4c0a1af76!2sMabini%2C%20Batangas!5e0!3m2!1sen!2sph!4v1698061234567!5m2!1sen!2sph"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white py-16 text-center shadow-inner">
+    <h2 class="text-3xl font-bold mb-6">📩 Contact Us</h2>
+    <p class="mb-4">Mabini Tourism Office <br>Email: info@mabinitourism.gov.ph <br>Phone: +63 43 123 4567</p>
+    <div class="flex justify-center space-x-6 text-2xl">
+      <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-red-600 hover:text-red-800"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4">
+    © 2025 Mabini Tourism. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      menu.classList.toggle('flex-col');
+      menu.classList.toggle('absolute');
+      menu.classList.toggle('bg-white');
+      menu.classList.toggle('top-16');
+      menu.classList.toggle('left-0');
+      menu.classList.toggle('w-full');
+      menu.classList.toggle('p-6');
+    });
+
+    // Carousel
+    const carousel = document.getElementById('carousel');
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      carousel.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+    // Auto-scroll
+    setInterval(() => {
+      carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    }, 5000);
+  </script>
+</body>
+</html>
